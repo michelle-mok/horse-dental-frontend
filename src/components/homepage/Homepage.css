@@ -1,0 +1,28 @@
+/* homepage sidebar styling */
+.homepage-sidebar {
+  width: 20%;
+  padding: 40px 20px;
+  height: 100vh;
+  border-right: 1px solid lightgray;
+}
+
+.homepage-container {
+  display: flex;
+}
+
+.homepage-content {
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage-content-owner {
+  width: 80%;
+  padding-bottom: 50px;
+}
+
+.homepage-content-horses {
+  width: 80%;
+}
