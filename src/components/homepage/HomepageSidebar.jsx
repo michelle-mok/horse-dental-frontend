@@ -17,7 +17,7 @@ function HomepageSidebar({ owners, setOwnersHorses }) {
                 {owners && (
                     owners.map((owner, index) => {
                         return (
-                            <Nav.Link onClick={() => handleOwnerClick(index)} eventKey={index}>{owner.last_name}, {owner.first_name}</Nav.Link>
+                            <Nav.Link onClick={() => handleOwnerClick(index)} eventKey={index}>{owner.lastName}, {owner.firstName}</Nav.Link>
                         )
                     })
                 )}

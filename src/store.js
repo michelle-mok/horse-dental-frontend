@@ -67,8 +67,8 @@ export function getOwners(setOwners) {
       .then((response) => {
          // sorting owners array alphabetically by last name
           response.data.allOwners.sort(function(a, b) {
-            var nameA = a.last_name.toUpperCase(); 
-            var nameB = b.last_name.toUpperCase(); 
+            var nameA = a.lastName.toUpperCase(); 
+            var nameB = b.lastName.toUpperCase(); 
             if (nameA < nameB) {
                 return -1;
             }

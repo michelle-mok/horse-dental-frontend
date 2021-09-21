@@ -6,6 +6,7 @@
   border-right: 1px solid lightgray;
 }
 
+/* homepage content  styling */
 .homepage-container {
   display: flex;
 }
@@ -20,9 +21,25 @@
 
 .homepage-content-owner {
   width: 80%;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid lightgray;
 }
 
 .homepage-content-horses {
+  padding-top: 50px;
   width: 80%;
+}
+
+/* accordion content styling */
+.horse-profile-col img {
+  width: 100%;
+  height: 100%;
+}
+
+.horse-profile-col .warning {
+  background-color: red;
+  color: white;
+  width: 100px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
