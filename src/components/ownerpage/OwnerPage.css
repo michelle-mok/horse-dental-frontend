@@ -40,6 +40,18 @@
   background-color: red;
   color: white;
   width: 100px;
-  font-size: 20px;
-  margin-bottom: 20px;
+  margin: 20px 10px 20px 0;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.horse-profile-col .problem {
+  background-color: orange;
+  color: white;
+  width: 100px;
+  margin: 0 10px 0 0;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 10px;
 }

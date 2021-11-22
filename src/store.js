@@ -4,7 +4,7 @@ axios.defaults.withCredentials = true;
 
 export const initialState = {
     selectedOwner: null,
-    ownersHorses: []
+    ownersHorses: null
 };
 
 const LOAD_OWNER = 'LOAD_OWNER';

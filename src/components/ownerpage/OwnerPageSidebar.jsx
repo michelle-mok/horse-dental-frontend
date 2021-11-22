@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import { getOwner, dentalAppContext, getOwnersHorses } from '../../store';
 
-function HomepageSidebar({ owners, setOwnersHorses }) {
+function OwnerPageSidebar({ owners, setOwnersHorses }) {
     const { dispatch } = useContext(dentalAppContext);
 
     const handleOwnerClick = (index) => {
@@ -13,7 +13,7 @@ function HomepageSidebar({ owners, setOwnersHorses }) {
     return (
         <div className="homepage-sidebar">
             <h4>Owners</h4>
-            <Nav variant="pills" defaultActiveKey='0' className="flex-column">
+            <Nav variant="pills" className="flex-column">
                 {owners && (
                     owners.map((owner, index) => {
                         return (
@@ -26,4 +26,4 @@ function HomepageSidebar({ owners, setOwnersHorses }) {
     )
 }
 
-export default HomepageSidebar
+export default OwnerPageSidebar

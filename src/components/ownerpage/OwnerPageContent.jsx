@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import { dentalAppContext } from '../../store';
-import AccordionContent from './AccordionContent';
+import HorseDetails from './HorseDetails';
 // import { DateTime } from 'luxon';
 
-function HomepageContent({ownersHorses}) {
+function OwnerPageContent({ownersHorses}) {
     const { store, dispatch } = useContext(dentalAppContext);
     const { selectedOwner} = store;
 
@@ -24,19 +24,19 @@ function HomepageContent({ownersHorses}) {
             </div>
             {ownersHorses && (
                 <div className="homepage-content-horses">
+                    <Accordion key={1234}>
                     {ownersHorses.map((horse, index) => {
                         return (
-                            <Accordion>
-                                <Accordion.Item eventKey={index}>
-                                    <Accordion.Header>{horse.name}, {horse.mraNumber}</Accordion.Header>
-                                    <Accordion.Body>
-                                       <AccordionContent horse={horse}/>
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                            </Accordion>
+                            <Accordion.Item eventKey={index}>
+                                <Accordion.Header>{horse.name}, {horse.mraNumber}</Accordion.Header>
+                                <Accordion.Body>
+                                    <HorseDetails horse={horse}/>
+                                </Accordion.Body>
+                            </Accordion.Item>
                         )
                     })}
-            </div>
+                    </Accordion>
+                </div>
             )}
         </div>
         )}
@@ -44,4 +44,4 @@ function HomepageContent({ownersHorses}) {
     )
 }
 
-export default HomepageContent
+export default OwnerPageContent

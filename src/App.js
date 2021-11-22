@@ -1,12 +1,12 @@
 import './App.css';
-import Homepage from './components/homepage/Homepage';
 import { DentalAppProvider } from './store';
+import OwnerPage from './components/ownerpage/OwnerPage';
 
 function App() {
   return (
     <DentalAppProvider>
     <div className="App">
-      <Homepage />
+      <OwnerPage />
     </div>
     </DentalAppProvider>
   );
